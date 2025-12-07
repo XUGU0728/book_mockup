@@ -13,9 +13,30 @@
       font-family: 'Pretendard', sans-serif;
       background: #f7f7f7;
       color: #222;
-      display: flex;
-      justify-content: center;
-      padding: 40px 20px;
+    }
+
+    /* 헤더 */
+    header {
+      width: 100%;
+      background: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    /* 푸터 */
+    footer {
+      width: 100%;
+      background: #222;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+      font-size: 14px;
+      margin-top: 40px;
     }
 
     .container {
@@ -25,6 +46,7 @@
       border-radius: 18px;
       padding: 30px;
       box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+      margin: 40px auto;
     }
 
     .top-section {
@@ -95,6 +117,14 @@
       background: #444;
     }
 
+    a div {
+      margin-top: 10px;
+      color: #222;
+      text-decoration: underline;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
     @media (max-width: 700px) {
       .container {
         padding: 20px;
@@ -107,8 +137,10 @@
 </head>
 
 <body>
-  <div class="container">
+  <!-- 헤더 -->
+  <header>SEOHA</header>
 
+  <div class="container">
     <div class="top-section">
       <!-- 3D Preview -->
       <div class="preview-box">
@@ -138,8 +170,10 @@
         <a href="./miniBook.pdf" target="_blank"><div>PDF 미리보기</div></a>
       </div>
     </div>
-
   </div>
+
+  <!-- 푸터 -->
+  <footer>© 2025 SEOHA. All rights reserved.</footer>
 
   <script type="module">
     const viewer = document.getElementById('book');
